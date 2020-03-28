@@ -1,10 +1,11 @@
 const express = require('express');
 const ids = require('short-id');
 const server = express();
+const cors = require('cors')
 const port = 5000;
 
-
 server.use(express.json());
+server.use(cors());
 
 const data = [
     {
